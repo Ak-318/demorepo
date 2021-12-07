@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <title>imaginnovate.com</title>
+    <head>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background: url('/home/developer/Desktop/html/index.html/office3.jpg') no-repeat;
+            background-size: cover; 
+            display: flex;
+            height: 100vh;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .container{
+            max-width: 900px;
+            width: 100%;
+            padding: 50px;
+            border-radius: 10px;
+        
+        }
+        .container .title{
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+            
+        }
+        .container form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        form .user-details .input{
+            margin: 20px 0px 15px 0px ;
+            width: calc(100% / 2 - 20px);
+            
+            
+        }
+        .user-details .input .details{
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .user-details .input input{
+            height: 45px;
+            width: 100%;
+            font-size: 15px;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding-left: 20px;
+            background: transparent;
+            
+        }
+        .terms{
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .terms input{
+            margin-right: 15px;  
+        }
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .button{
+            height: 60px;
+            margin: 30px 0px;
+            justify-content: center;
+        }
+        .button input{
+            height: 100%;
+            width: 60%;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+        .button input:hover{
+            background: cadetblue;
+        }
+        </style>    
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>IMAGINNOVATE</h1>
+                <H2>REGISTER YOUR ACCOUNT</H2>
+            </div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input">
+                        <span class="details"> FIRST NAME :</span>
+                        <input type="text" name="fullname" placeholder="firstname">
+                    </div>
+                    <div class="input">
+                        <span class="details"> LAST NAME :</span>
+                        <input type="text" name="fullname" placeholder="lastname">
+                    </div>
+                    <div class="input">
+                        <span class="details"> PHONE NUMBER :</span>
+                        <input type="text" name="fullname" placeholder="phonenumber">
+                    </div>
+                    <div class="input">
+                        <span class="details"> EMAIL:</span>
+                        <input type="email" name="fullname" placeholder="email">
+                    </div>
+                    <div class="input">
+                        <span class="details"> PASSWORD :</span>
+                        <input type="password" name="fullname" placeholder="password">
+                    </div>
+                    <div class="input">
+                        <span class="details"> CONFIRM PASSWORD :</span>
+                        <input type="password" name="fullname" placeholder="password">
+                    </div>
+                    </div>
+                    <div class="terms">
+                        <input type="radio"> I agree terms & policies
+                    </div>
+                        
+                    <div class="button">
+                        <input type="submit" value="CREATE ACCOUNT">
+                    </div>                       
+                        <p style="text-align: center;">Don't have account?Join free today</p>
+                    
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>
