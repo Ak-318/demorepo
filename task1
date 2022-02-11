@@ -1,0 +1,118 @@
+/usr/share/nginx/html
+
+main:
+$scp -i ~/home/developer/Downloads/nginxkey.pem ~/home/developer/Desktop/html/index.html/task-1.html  ubuntu@13.232.51.78:~/usr/share/nginx/html
+
+
+For SCP, you need to  run the following command on your cmd of your local machine:
+scp -i path/to/pem path/to/file username@PublicDNS/home/username
+
+
+https://angus.readthedocs.io/en/2014/amazon/transfer-files-between-instance.html
+
+
+
+scp -i /directory/to/abc.pem -r /your/local/file/to/copy user@ec2-xx-xx-xxx-xxx.compute-1.amazonaws.com:path/to/file
+
+1-way
+scp -i /home/developer/Downloads/nginxkey.pem /home/developer/Desktop/html/index.html/task-1.html ubuntu@3.108.67.205:/usr/share/nginx/html
+
+
+chmod 400 /path/to/yourKeyFile.pem
+2-way
+scp /home/developer/Desktop/html/index.html/task-1.html ubuntu@3.108.67.205:/usr/share/nginx/html
+
+
+
+
+
+
+
+
+free DNS service providers: freenom.com
+  https://www.keycdn.com/blog/best-free-dns-hosting-providers
+  
+  
+  https://owlhowto.com/how-to-change-default-index-page-on-nginx/
+  
+  
+  
+  
+  git pst tocken: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
+  
+								  
+								     HOW TO LAUNCH NGINX AND CONFIGURE YOUR OWN HTML PAGE:
+								 > First launch one ubuntu machine
+								 > connect that
+								 > run sudo apt-get update
+								       sudo apt-get install nginx
+								       nginx -v
+								       systemctl status nginx (active)
+								 > Nginx all configuration files in : /etc/nginx/
+								 > cd /etc/nginx/sites-enable/
+								 > unlink default files
+								 > Add your own configuration files in : /etc/nginx/conf
+								 >                                      nano example.local.conf
+								 					 server {
+														listen 80 default_server;
+														index index.html index.htm index.php;
+														server_name example.local;
+														root /var/www/example.local;
+													}
+
+								 > Now change the default webpage to custome html page in : /var/www/
+								  					mkdir example.local
+								  					in this directory add your html file.
+								 > then run this commands : systemctl reload nginx
+								 > take the public ip address and hit .
+								 > you will get your web page......
+  
+  
+  MADHU SIR TASKS:
+     Pentest errors:
+    1.MISSING security headers :
+          https://www.netsparker.com/blog/web-security/http-security-headers/
+  
+  
+  
+  
+   server {
+                listen                   443 ssl;
+                server_name              karthiktigerking.gq;
+                ssl_certificate          karthiktigerking.gq.crt;
+                ssl_certificate_key      karthiktigerking.gq.key;
+
+
+                add_header Strict-Transport-Security 'max-age=31536000; includeSubDomains; preload';
+                add_header Content-Security-Policy: default-src ;
+                add_header Referrer-Policy "no-referrer";
+}
+   
+  https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04 
+   How To Secure Nginx with Let's Encrypt on Ubuntu 20.04 & How to lunch nginx on ubuntu...
+  
+Domain name provider: freenom  lakshmikanth144240@gmail.com  &  Password@7 
+
+  
+  git pst new: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
+  
+ FTP server configuration:
+ https://phoenixnap.com/kb/install-ftp-server-on-ubuntu-vsftpd
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  																																											
